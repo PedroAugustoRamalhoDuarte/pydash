@@ -7,7 +7,7 @@
 The Scheduler is a Singleton class implementation
 """
 
-from base.singleton import Singleton
+from pydash.base.singleton import Singleton
 
 
 class Scheduler(metaclass=Singleton):

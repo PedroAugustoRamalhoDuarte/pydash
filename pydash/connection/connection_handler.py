@@ -10,17 +10,14 @@ The class responsible to retrieve segments in the web server.
 Also it implements a traffic shaping approach.
 """
 
-from base.simple_module import SimpleModule
-from base.message import Message, MessageKind, SSMessage
-from base.configuration_parser import ConfigurationParser
-from player.parser import *
+from pydash.base.simple_module import SimpleModule
+from pydash.base.message import Message, MessageKind
+from pydash.base.configuration_parser import ConfigurationParser
+from pydash.player.parser import *
 import http.client
 import time
 from scipy.stats import expon
-from base.timer import Timer
-import math
-import seaborn as sns
-import matplotlib.pyplot as plt
+from pydash.base import Timer
 
 
 class ConnectionHandler(SimpleModule):

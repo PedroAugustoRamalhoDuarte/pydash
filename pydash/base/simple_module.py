@@ -10,9 +10,9 @@ Class implements basic functionality to be called by the main program.
 """
 
 from abc import ABCMeta, abstractmethod
-from base.scheduler import Scheduler
-from base.scheduler_event import SchedulerEvent
-from base.message import Message, MessageKind
+from pydash.base.scheduler import Scheduler
+from pydash.base.scheduler_event import SchedulerEvent
+from pydash.base.message import MessageKind
 
 
 class SimpleModule(metaclass=ABCMeta):

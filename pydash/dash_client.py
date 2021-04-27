@@ -13,11 +13,10 @@ responsible to make the communication among them happens.
 
 import importlib
 
-from base.configuration_parser import ConfigurationParser
-from base.scheduler import Scheduler
-from connection.connection_handler import ConnectionHandler
-from player.player import Player
-
+from pydash.base.configuration_parser import ConfigurationParser
+from pydash.base.scheduler import Scheduler
+from pydash.connection import ConnectionHandler
+from pydash.player.player import Player
 
 class DashClient:
 
@@ -34,7 +33,7 @@ class DashClient:
         self.player = Player(0)
 
         # automatic loading class by the name
-        r2a_class = getattr(importlib.import_module('r2a.' + r2a_algorithm.lower()), r2a_algorithm)
+        r2a_class = getattr(importlib.import_module('pydash.r2a.' + r2a_algorithm.lower()), r2a_algorithm)
         self.r2a = r2a_class(1)
 
         self.connection_handler = ConnectionHandler(2)

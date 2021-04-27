@@ -10,10 +10,9 @@ It is necessary to implement all the @abstractmethod methods to generate a new R
 
 """
 
-from base.simple_module import SimpleModule
-from abc import ABCMeta, abstractmethod
-from base.message import Message, MessageKind
-from base.whiteboard import Whiteboard
+from pydash.base.simple_module import SimpleModule
+from abc import abstractmethod
+from pydash.base.whiteboard import Whiteboard
 
 
 class IR2A(SimpleModule):

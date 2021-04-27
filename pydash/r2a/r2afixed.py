@@ -12,8 +12,8 @@ is made inside of handle_segment_size_request(), before sending the message down
 In this algorithm the quality choice is always the same.
 """
 
-from player.parser import *
-from r2a.ir2a import IR2A
+from pydash.player.parser import *
+from pydash.r2a import IR2A
 
 
 class R2AFixed(IR2A):

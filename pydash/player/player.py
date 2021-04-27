@@ -16,13 +16,13 @@ import time
 from matplotlib import pyplot as plt
 import statistics
 
-from base.configuration_parser import ConfigurationParser
-from base.message import *
-from base.simple_module import SimpleModule
-from base.timer import Timer
-from player.out_vector import OutVector
-from player.parser import *
-from base.whiteboard import Whiteboard
+from pydash.base.configuration_parser import ConfigurationParser
+from pydash.base.message import *
+from pydash.base.simple_module import SimpleModule
+from pydash.base import Timer
+from pydash.player import OutVector
+from pydash.player.parser import *
+from pydash.base.whiteboard import Whiteboard
 
 '''
 quality_id - Taxa em que o video foi codificado (46980bps, ..., 4726737bps) 
